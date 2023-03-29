@@ -1,0 +1,38 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Covered Area"] - google_map</title>
+    <link href="~/Content/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    <script src="~/Scripts/map_covered.js"></script>
+</head>
+<body>
+    <div class="title"> Covered Areas  </div>
+    <div id="wrapper">
+        <div class="divActions">
+            <button id="save-button" class="btn btn-primary btn-lg btn-block" style="display:none;">Save</button>
+            <button id="delete-button" class="btn btn-danger btn-lg btn-block" style="display:none;">Delete Selected Shape</button>
+            <button id="clear-button" style="display:none;" class="btn btn-secondary  btn-lg btn-block"> Clear Selected Shape</button>
+
+            <div id="output"></div>
+        </div>
+
+        <div id="map" style="height:800px;"></div>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAjGX23bKEeGoArU_o40bjv2rU0mxzv2vk&callback=initMap&libraries=drawing"></script>
+    </div>
+
+    <script src="~/Scripts/jquery-3.4.1.min.js"></script>
+
+
+</body>
+</html>
+
+
+
+
